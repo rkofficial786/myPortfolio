@@ -228,17 +228,19 @@
             </div>
 
             <div class="contact-right" data-aos="fade-left">
-                <form id="myForm">
+                <form name="submit-to-google-sheet">
 
-                    <input type="text" name="name" placeholder="Enter Name">
-
-
-                    <input type="email" name="email" placeholder="Enter Email">
+                    <input type="text" name="Name" placeholder="Enter Name">
 
 
-                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                    <input type="email" name="Email" placeholder="Enter Email">
+
+
+                    <textarea name="Message" id="msg" cols="30" rows="10" placeholder="Enter Message"></textarea>
                     <button type="submit">Submit</button>
                 </form>
+                <br>
+                <span id="submission"> </span>
             </div>
 
         </div>
@@ -256,6 +258,24 @@
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxgT1Xn12z7hRoYnbwphCiMDMcHHKI0Dd4ntTZBVt0Y36OrS5ST6th68SYFsdAqhoBbbg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const sub_msg = document.getElementById('submission')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                sub_msg.innerHTML= "Message Sent"
+                setTimeout(()=>{
+                    sub_msg.innerHTML=""
+                },4000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
 
     <script src="./script.js"></script>
