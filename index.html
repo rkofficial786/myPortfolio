@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <div class="navbar">
+                <img src="./images/Picsart_23-04-03_12-52-12-736 (1).png">
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <ul id="side-menu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                    <li><a href="#header">Home</a> </li>
+                    <li> <a href="#about-page">About</a> </li>
+                    <li> <a href="#service-page">Services</a> </li>
+                    <li> <a href="#project-page">Project</a> </li>
+                    <li> <a href="#contact-page">Contact</a> </li>
+                </ul>
+            </div>
+
+            <div class="hero">
+                <div class="hero-left">
+
+
+                    <h2>Hi, I'm <span>Rupraj</span></h2>
+                    <h2 class="typing-text">Full Stack Developer</h2>
+                    <h2 class="typing">Full Stack Developer</h2>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- about me-- -->
+
+
+        <div class="about-me" id="about-page">
+            <div class="about-left" data-aos="fade-right">
+                <img src="./images/user RK.png" alt="">
+
+            </div>
+
+            <div class="about-right" data-aos="fade-left">
+                <h1>About <span>Me</span> </h1>
+                <p id="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci quod rem, nobis
+                    accusantium accusamus at autem veniam eius ex eligendi commodi dolores. Voluptas itaque impedit
+                    dolorem doloribus laboriosam ipsum adipisci dolorum mollitia dignissimos veritatis at obcaecati,
+                    quod earum blanditiis, rerum ex ad, quis consequuntur distinctio saepe. Quis, animi sint.</p>
+                <div class="tabs">
+                    <button data-skills class="btn">Skills</button>
+                    <button data-exp class="btn">Experience</button>
+                    <button data-education class="btn">Education</button>
+                </div>
+
+                <div class="skills active">
+                    <div class="skill">
+                        <h2>Ui/Ux designer</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="skill">
+                        <h2>Web Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="skill">
+                        <h2>Java Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+
+
+                <div class="experience">
+                    <div class="exp">
+                        <h2>Worked in Google - 2 Yrs</h2>
+                        <p>Developed a Ui for google,s upcoming website</p>
+                    </div>
+
+                    <div class="exp">
+                        <h2>Worked in Microsoft - 1.5 Yrs</h2>
+                        <p>worked in there upcoming Windows 69</p>
+                    </div>
+
+                    <div class="exp">
+                        <h2>SDE at Amazon - 3 Yrs</h2>
+                        <p> Developed a cloths UI page where users can wear it virtually </p>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <div class="ed">
+                        <h2>Matric - 83.2%</h2>
+                        <p>Trident Public School</p>
+                    </div>
+
+                    <div class="ed">
+                        <h2>Intermediate - 85.8%</h2>
+                        <p>KID-Z Public School</p>
+                    </div>
+
+                    <div class="ed">
+                        <h2>BCA - Ongoing</h2>
+                        <p>CSIST</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <!-- my services--- -->
+
+        <div id="service-page" class="services">
+
+            <h1>My <span>Services</span> </h1>
+            <div class="service">
+                <div data-aos="fade-right" class="service-div">
+                    <img src="./images/web.png" alt="" width="80" height="80">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit repellat dolore cumque
+                        distinctio perspiciatis?</p>
+                    <a href="https://github.com/rkofficial786" target="_blank"> <button>Learn More</button></a>
+                </div>
+
+                <div data-aos="fade-up" class="service-div">
+                    <img src="./images/java.png" alt="" width="80" height="80">
+                    <h2>Java Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit repellat dolore cumque
+                        distinctio perspiciatis?</p>
+                    <a href="https://github.com/rkofficial786" target="_blank"><button>Learn More</button></a>
+                </div>
+
+                <div data-aos="fade-lef" class="service-div">
+                    <img src="./images/setting.png" alt="" width="80" height="80">
+                    <h2>Ui/Ux Designer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit repellat dolore cumque
+                        distinctio perspiciatis?</p>
+                    <a href="https://github.com/rkofficial786" target="_blank"><button>Learn More</button></a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- my project-- -->
+
+        <div class="project-section" id="project-page" data-aos="fade-left">
+
+
+            <h1 id="my-project">My <Span>Projects</Span></h1>
+
+
+            <div class="projects-container">
+                <div class="project" data-aos="fade-right">
+                    <img src="./images/work-1.png" alt="" width="300px" height="400px">
+                    <div class="overlay">
+                        <h2>PassWord Generator</h2>
+                        <p>The website can genearte a password based on users choice where the user is free to select
+                            which characters to include and what should be the length of password</p>
+                        <a href="https://rkofficial786.github.io/Password-Generator/" target="_blank"> <button><img
+                                    src="./images/external-link (1).png" alt="" width="50" height="50"></button></a>
+                    </div>
+                </div>
+
+                <div class="project" data-aos="fade-up">
+                    <img src="./images/work-2.png" alt="" width="300px" height="400px">
+                    <div class="overlay">
+                        <h2>Weather App</h2>
+                        <p>It can fetch and show the data of real time weather using a genuine API where users are also
+                            free to see the weather of any city by seraching them on the UI</p>
+                        <a href="https://rkofficial786.github.io/WeatherApp/" target="_blank"> <button><img
+                                    src="./images/external-link (1).png" alt="" width="50" height="50"></button> </a>
+                    </div>
+                </div>
+
+                <div class="project" data-aos="fade-left">
+                    <img src="./images/work-3.png" alt="" width="300px" height="400px">
+                    <div class="overlay">
+                        <h2>E-commerce</h2>
+                        <p>This project let the user choose their products and buy them where users can search the
+                            product, filter the product and explore them</p>
+                        <a href="https://rkofficial786.github.io/E-commerce/" target="_blank"><button><img
+                                    src="./images/external-link (1).png" alt="" width="50" height="50"></button></a>
+                    </div>
+                </div>
+            </div>
+            <button id="seemore"> See More</button>
+
+        </div>
+
+
+        <!-- contact me--- -->
+
+        <div class="contact-me" id="contact-page" data-aos="fade-left">
+            <div class="contact-left" data-aos="fade-right">
+                <h1>Contact <span>me</span> </h1>
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h2>ruprajsingh1@gmail.com</h2>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/rusi_0312/" target="_blank"> <i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/DedsecMarcus" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="./images/my-cv.pdf" download="my-cv.pdf"><button>Download CV</button></a>
+            </div>
+
+            <div class="contact-right" data-aos="fade-left">
+                <form id="myForm">
+
+                    <input type="text" name="name" placeholder="Enter Name">
+
+
+                    <input type="email" name="email" placeholder="Enter Email">
+
+
+                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            <h1>Copyright © Rupraj Made with &nbsp; <i class="fa-solid fa-heart"></i></h1>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
