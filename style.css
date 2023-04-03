@@ -69,8 +69,8 @@ ul li::after{
     
         content: "";
         position: absolute;
-        bottom: 0px;
-        left: 5px;
+        bottom: -3px;
+        left: 15px;
         width: 0%;
         height: 5px;
         background-color: var(--color-light);
@@ -255,7 +255,7 @@ ul li:hover::after{
 }
 
 .services h1{
-    font-size: 80px;
+    font-size: 4rem;
 }
 
 .service{
@@ -283,10 +283,17 @@ ul li:hover::after{
     width: 360px;
     height: 360px;
     position: relative;
-    transition: ease-in-out;
     transition-duration: 0.5s;
+    transition: ease-in-out;
+    
     
 
+}
+.service div:hover{
+  transform: translateY(-10px) !important; 
+  
+  /* top: -10px; */
+background-color: var(--color-light);
 }
 
 .service div button{
@@ -307,11 +314,7 @@ transition-duration: 0.5s;
     font-size: 30px;
 }
 
-.service div:hover{
-    /* transform: translateY(-10px); */
-    top: -10px;
-  background-color: var(--color-light);
-}
+
 
 .service div img{
 transition: ease-in-out;
@@ -567,7 +570,7 @@ display: none;
 
 /* media query--- */
 
-@media  (1px <= width <= 1000px)  {
+@media  (1px <= width <= 1000px) {
     .navbar {
       margin: 0 50px;
     }
