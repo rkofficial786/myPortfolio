@@ -567,7 +567,7 @@ display: none;
 
 /* media query--- */
 
-@media only screen and (max-width: 768px) {
+@media  (1px <= width <= 1000px)  {
     .navbar {
       margin: 0 50px;
     }
